@@ -28,6 +28,10 @@ set updatetime=100
 
 " CtrlP ignore globs
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,data
+if executable('rg')
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+endif
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
