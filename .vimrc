@@ -37,10 +37,10 @@ call plug#begin(expand('~/.vim/plugged'))
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'junegunn/fzf', { 'do': { -> fzf.install() } }
   Plug 'junegunn/fzf.vim'
-	Plug 'ctrlpvim/ctrlp.vim'
-	Plug 'vim-airline/vim-airline'
-	Plug 'preservim/nerdtree'
-	Plug 'airblade/vim-gitgutter'
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'vim-airline/vim-airline'
+  Plug 'preservim/nerdtree'
+  Plug 'airblade/vim-gitgutter'
   Plug 'mattn/emmet-vim'
   Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
   Plug 'bronson/vim-trailing-whitespace'
