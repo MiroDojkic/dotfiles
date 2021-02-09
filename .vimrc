@@ -40,7 +40,7 @@ call plug#begin(expand('~/.vim/plugged'))
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'vim-airline/vim-airline'
   Plug 'preservim/nerdtree'
-  Plug 'airblade/vim-gitgutter'
+  Plug 'mhinz/vim-signify'
   Plug 'mattn/emmet-vim'
   Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
   Plug 'bronson/vim-trailing-whitespace'
