@@ -36,6 +36,16 @@ endif
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+" Trigger coc.nvim autocompletion with tab
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
+
 packadd! matchit
 call plug#begin(expand('~/.vim/plugged'))
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
