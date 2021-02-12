@@ -42,6 +42,7 @@ call plug#begin(expand('~/.vim/plugged'))
   Plug 'junegunn/fzf', { 'do': { -> fzf.install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
   Plug 'preservim/nerdtree'
   Plug 'mhinz/vim-signify'
