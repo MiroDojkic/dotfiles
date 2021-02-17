@@ -56,6 +56,7 @@ call plug#begin(expand('~/.vim/plugged'))
   Plug 'vim-airline/vim-airline'
   Plug 'preservim/nerdtree'
   Plug 'mhinz/vim-signify'
+  Plug 'tpope/vim-fugitive'
   Plug 'mattn/emmet-vim'
   Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
   Plug 'bronson/vim-trailing-whitespace'
