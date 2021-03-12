@@ -5,6 +5,8 @@ noremap <C-k> <C-w>k
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
 nnoremap ]e  :<c-u>execute 'move +'. v:count1<cr>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 syntax enable
 set t_8f=^[[38;2;%lu;%lu;%lum
