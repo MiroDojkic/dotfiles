@@ -30,6 +30,7 @@ set updatetime=100
 
 " CtrlP ignore globs
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,data
+let g:ctrlp_lazy_update=1
 if executable('rg')
   let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
   let g:ctrlp_use_caching=0
