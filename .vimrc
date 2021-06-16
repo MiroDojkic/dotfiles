@@ -56,6 +56,7 @@ call plug#begin(expand('~/.vim/plugged'))
   Plug 'junegunn/fzf.vim'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-surround'
+  Plug 'jiangmiao/auto-pairs'
   Plug 'vim-airline/vim-airline'
   Plug 'preservim/nerdtree'
   Plug 'mhinz/vim-signify'
