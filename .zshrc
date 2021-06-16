@@ -1,7 +1,7 @@
 export ZSH="~/.oh-my-zsh"
 DISABLE_UPDATE_PROMPT="true"
 
-plugins=(git history zsh-autosuggestions common-aliases nvm npm zsh_reload z colored-man-pages jsontools zsh-syntax-highlighting)
+plugins=(git history zsh-autosuggestions common-aliases npm zsh_reload z colored-man-pages jsontools zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
