@@ -24,6 +24,7 @@ alias grep='rg'
 alias vim='nvim'
 alias npmrc='npm run dev:client'
 alias npmrs='npm run dev:server'
+alias ghciX='ghci -XNoImplicitPrelude'
 
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
