@@ -72,3 +72,5 @@ call plug#end()
 let g:embark_terminal_italics=1
 let g:nord_italic=1
 colorscheme nord
+
+hi Comment gui=italic
