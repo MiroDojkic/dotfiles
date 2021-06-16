@@ -19,7 +19,7 @@ alias alacritty="nvim ~/.config/alacritty/alacritty.yml"
 alias chromep='open -a "Google Chrome" --args --proxy-pac-url=http://localhost:2000/proxy.pac'
 alias ls='exa'
 alias curl='curl -s'
-alias cat='bat'
+alias cat='bat --theme=ansi-dark --italic-text=always'
 alias grep='rg'
 alias vim='nvim'
 alias npmrc='npm run dev:client'
