@@ -70,4 +70,5 @@ call plug#begin(expand('~/.vim/plugged'))
 call plug#end()
 
 let g:embark_terminal_italics=1
-colorscheme embark
+let g:nord_italic=1
+colorscheme nord
