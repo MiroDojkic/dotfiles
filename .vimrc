@@ -58,6 +58,15 @@ nmap <leader>rn <Plug>(coc-rename)
 nmap <leader>f  <Plug>(coc-fix-current)
 nmap <leader>ac  <Plug>(coc-codeaction)
 
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
 packadd! matchit
 call plug#begin(expand('~/.vim/plugged'))
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
