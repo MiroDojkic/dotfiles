@@ -1,3 +1,6 @@
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
@@ -83,12 +86,10 @@ call plug#begin(expand('~/.vim/plugged'))
   Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'sheerun/vim-polyglot'
-  Plug 'arcticicestudio/nord-vim'
   Plug 'embark-theme/vim', { 'as': 'embark' }
 call plug#end()
 
 let g:embark_terminal_italics=1
-let g:nord_italic=1
-colorscheme nord
+colorscheme embark
 
 hi Comment gui=italic
