@@ -1,4 +1,4 @@
-export ZSH="~/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 DISABLE_UPDATE_PROMPT="true"
 
 plugins=(git history zsh-autosuggestions common-aliases npm zsh_reload z colored-man-pages jsontools zsh-syntax-highlighting)
