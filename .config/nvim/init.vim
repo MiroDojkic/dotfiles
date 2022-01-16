@@ -30,6 +30,7 @@ set nobackup
 set noswapfile
 set shortmess+=c
 set updatetime=100
+set smartcase
 
 " CtrlP ignore globs
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,data
