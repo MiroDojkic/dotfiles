@@ -17,6 +17,7 @@ set t_8b=^[[48;2;%lu;%lu;%lum
 set termguicolors
 set background=dark
 
+let mapleader=" "
 set showcmd
 set autoindent
 set expandtab
