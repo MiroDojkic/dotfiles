@@ -33,12 +33,9 @@ set shortmess+=c
 set updatetime=100
 set smartcase
 
-" CtrlP ignore globs
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,data
-let g:ctrlp_lazy_update=1
-if executable('rg')
-  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
-  let g:ctrlp_use_caching=0
+if (exists('+colorcolumn'))
+    set colorcolumn=80
+    highlight ColorColumn ctermbg=9
 endif
 
 let g:airline#extensions#tabline#enabled = 1
@@ -74,18 +71,14 @@ endfunction
 
 packadd! matchit
 call plug#begin(expand('~/.vim/plugged'))
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'neoclide/coc.nvim', { 'branch': 'release' }
   Plug 'junegunn/fzf', { 'do': { -> fzf.install() } }
   Plug 'junegunn/fzf.vim'
-  Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-surround'
-  Plug 'jiangmiao/auto-pairs'
   Plug 'vim-airline/vim-airline'
-  Plug 'preservim/nerdtree'
   Plug 'mhinz/vim-signify'
   Plug 'tpope/vim-fugitive'
   Plug 'mattn/emmet-vim'
-  Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'sheerun/vim-polyglot'
   Plug 'embark-theme/vim', { 'as': 'embark' }
@@ -93,5 +86,4 @@ call plug#end()
 
 let g:embark_terminal_italics=1
 colorscheme embark
-
 hi Comment gui=italic
