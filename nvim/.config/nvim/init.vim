@@ -13,6 +13,10 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <leader>x :silent !chmod +x %<CR>
+nnoremap <leader>pv :Ex<CR>
+nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
+nnoremap <leader>+ :vertical resize +5<CR>
+nnoremap <leader>- :vertical resize -5<CR>
 
 syntax enable
 set t_8f=^[[38;2;%lu;%lu;%lum
