@@ -23,13 +23,12 @@ set t_8f=^[[38;2;%lu;%lu;%lum
 set t_8b=^[[48;2;%lu;%lu;%lum
 set termguicolors
 set background=dark
-
-set showcmd
-set autoindent
+set scrolloff=8
+set number
+set relativenumber
 set expandtab
-set ts=2
-set sw=2
-set textwidth=80
+set tabstop=2
+set shiftwidth=2
 set undofile
 set undodir=~/.vim/undodir
 set nowritebackup
@@ -38,6 +37,7 @@ set noswapfile
 set shortmess+=c
 set updatetime=100
 set smartcase
+set smartindent
 
 if (exists('+colorcolumn'))
     set colorcolumn=80
