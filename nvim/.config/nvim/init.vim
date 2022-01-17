@@ -1,5 +1,6 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
+let mapleader=" "
 
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
@@ -19,7 +20,6 @@ set t_8b=^[[48;2;%lu;%lu;%lum
 set termguicolors
 set background=dark
 
-let mapleader=" "
 set showcmd
 set autoindent
 set expandtab
