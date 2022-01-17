@@ -6,8 +6,8 @@ noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
-nnoremap ]e  :<c-u>execute 'move +'. v:count1<cr>
+nnoremap [e :<C-u>execute 'move -1-'. v:count1<CR>
+nnoremap ]e :<C-u>execute 'move +'. v:count1<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <C-p> :Files<CR>
