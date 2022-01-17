@@ -9,8 +9,6 @@ noremap <C-k> <C-w>k
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 nnoremap [e :<C-u>execute 'move -1-'. v:count1<CR>
 nnoremap ]e :<C-u>execute 'move +'. v:count1<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <leader>x :silent !chmod +x %<CR>
 nnoremap <leader>pv :Ex<CR>
