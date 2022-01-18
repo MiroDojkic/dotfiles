@@ -1,20 +1,9 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 let mapleader=" "
-
-noremap <C-l> <C-w>l
-noremap <C-h> <C-w>h
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-nnoremap [e :<C-u>execute 'move -1-'. v:count1<CR>
-nnoremap ]e :<C-u>execute 'move +'. v:count1<CR>
-nnoremap <C-p> :Files<CR>
-nnoremap <leader>x :silent !chmod +x %<CR>
-nnoremap <leader>pv :Ex<CR>
-nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
-nnoremap <leader>+ :vertical resize +5<CR>
-nnoremap <leader>- :vertical resize -5<CR>
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:user_emmet_leader_key='<C-z>'
 
 syntax enable
 set t_8f=^[[38;2;%lu;%lu;%lum
@@ -42,11 +31,25 @@ if (exists('+colorcolumn'))
     highlight ColorColumn ctermbg=9
 endif
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
+noremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+nnoremap <silent> <space><space> :nohlsearch<Bar>:echo<CR>
+nnoremap [e :<C-u>execute 'move -1-'. v:count1<CR>
+nnoremap ]e :<C-u>execute 'move +'. v:count1<CR>
+nnoremap <C-p> :Files<CR>
+nnoremap <leader>x :silent !chmod +x %<CR>
+nnoremap <leader>pv :Ex<CR>
+nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
+nnoremap <leader>+ :vertical resize +5<CR>
+nnoremap <leader>- :vertical resize -5<CR>
+nnoremap <C-J> :cprev<CR>
+nnoremap <C-K> :cnext<CR>
+nnoremap <C-F> :Rg<space>
 
 " Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+nnoremap <silent> <leader>k :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -58,6 +61,19 @@ function! s:show_documentation()
   endif
 endfunction
 
+" Trigger completion
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 nmap <silent> gd <Plug>(coc-definition)
@@ -67,15 +83,6 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <leader>rn <Plug>(coc-rename)
 nmap <leader>f  <Plug>(coc-fix-current)
 nmap <leader>ac  <Plug>(coc-codeaction)
-
-nnoremap <silent> <C-K> :call <SID>show_documentation()<CR>
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
 
 packadd! matchit
 call plug#begin(expand('~/.vim/plugged'))
