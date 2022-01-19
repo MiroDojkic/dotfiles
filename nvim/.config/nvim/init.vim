@@ -39,6 +39,8 @@ nnoremap <silent> <space><space> :nohlsearch<Bar>:echo<CR>
 nnoremap [e :<C-u>execute 'move -1-'. v:count1<CR>
 nnoremap ]e :<C-u>execute 'move +'. v:count1<CR>
 nnoremap <C-p> :GFiles<CR>
+nnoremap <leader>gh :diffget //2<CR>
+nnoremap <leader>gl :diffget //3<CR>
 nnoremap <leader>x :silent !chmod +x %<CR>
 nnoremap <leader>pv :Ex<CR>
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
@@ -91,6 +93,7 @@ call plug#begin(expand('~/.vim/plugged'))
   Plug 'neoclide/coc.nvim', { 'branch': 'release' }
   Plug 'junegunn/fzf', { 'do': { -> fzf.install() } }
   Plug 'junegunn/fzf.vim'
+  Plug 'stsewd/fzf-checkout.vim'
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
   Plug 'mhinz/vim-signify'
