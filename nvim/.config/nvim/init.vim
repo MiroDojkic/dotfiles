@@ -46,7 +46,7 @@ nnoremap <leader>+ :vertical resize +5<CR>
 nnoremap <leader>- :vertical resize -5<CR>
 nnoremap [q :cprev<CR>
 nnoremap ]q :cnext<CR>
-nnoremap <C-F> :Rg<space>
+nnoremap <C-f> :Rg<space>
 vnoremap <leader>y "+y
 nnoremap <leader>y "+y
 
