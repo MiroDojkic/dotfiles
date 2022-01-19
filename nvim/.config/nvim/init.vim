@@ -44,8 +44,8 @@ nnoremap <leader>pv :Ex<CR>
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <leader>+ :vertical resize +5<CR>
 nnoremap <leader>- :vertical resize -5<CR>
-nnoremap <C-J> :cprev<CR>
-nnoremap <C-K> :cnext<CR>
+nnoremap [q :cprev<CR>
+nnoremap ]q :cnext<CR>
 nnoremap <C-F> :Rg<space>
 
 " Use K to show documentation in preview window.
