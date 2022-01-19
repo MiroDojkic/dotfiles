@@ -47,6 +47,8 @@ nnoremap <leader>- :vertical resize -5<CR>
 nnoremap [q :cprev<CR>
 nnoremap ]q :cnext<CR>
 nnoremap <C-F> :Rg<space>
+vnoremap <leader>y "+y
+nnoremap <leader>y "+y
 
 " Use K to show documentation in preview window.
 nnoremap <silent> <leader>k :call <SID>show_documentation()<CR>
