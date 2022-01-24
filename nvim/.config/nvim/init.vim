@@ -41,6 +41,8 @@ nnoremap ]e :<C-u>execute 'move +'. v:count1<CR>
 nnoremap <C-p> :GFiles<CR>
 nnoremap <leader>gh :diffget //2<CR>
 nnoremap <leader>gl :diffget //3<CR>
+nnoremap <leader>gc :GBranches track<CR>
+nnoremap <leader>gp :Git -c push.default=current push<CR>
 nnoremap <leader>x :silent !chmod +x %<CR>
 nnoremap <leader>pv :Ex<CR>
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
@@ -48,9 +50,10 @@ nnoremap <leader>+ :vertical resize +5<CR>
 nnoremap <leader>- :vertical resize -5<CR>
 nnoremap [q :cprev<CR>
 nnoremap ]q :cnext<CR>
-nnoremap <C-f> :Rg<space>
 vnoremap <leader>y "+y
 nnoremap <leader>y "+y
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 " Use K to show documentation in preview window.
 nnoremap <silent> <leader>k :call <SID>show_documentation()<CR>
@@ -90,6 +93,7 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 
 packadd! matchit
 call plug#begin(expand('~/.vim/plugged'))
+  Plug 'preservim/nerdtree'
   Plug 'neoclide/coc.nvim', { 'branch': 'release' }
   Plug 'junegunn/fzf', { 'do': { -> fzf.install() } }
   Plug 'junegunn/fzf.vim'
