@@ -99,6 +99,7 @@ call plug#begin(expand('~/.vim/plugged'))
   Plug 'junegunn/fzf.vim'
   Plug 'stsewd/fzf-checkout.vim'
   Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-commentary'
   Plug 'vim-airline/vim-airline'
   Plug 'mhinz/vim-signify'
   Plug 'tpope/vim-fugitive'
