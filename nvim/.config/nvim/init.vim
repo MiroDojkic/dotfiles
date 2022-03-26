@@ -23,6 +23,7 @@ set nobackup
 set noswapfile
 set shortmess+=c
 set updatetime=100
+set ignorecase
 set smartcase
 set smartindent
 
