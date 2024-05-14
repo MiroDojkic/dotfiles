@@ -107,9 +107,10 @@ call plug#begin(expand('~/.vim/plugged'))
   Plug 'mattn/emmet-vim'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'sheerun/vim-polyglot'
-  Plug 'arcticicestudio/nord-vim'
+  " Plug 'arcticicestudio/nord-vim'
+  Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 call plug#end()
 
 let g:nord_italic=1
-colorscheme nord
+colorscheme embark
 hi Comment gui=italic
