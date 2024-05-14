@@ -19,7 +19,7 @@ alias zshconfig="nvim $HOME/.zshrc"
 alias ohmyzsh="nvim $HOME/.oh-my-zsh"
 alias alacritty="nvim $HOME/.config/alacritty/alacritty.yml"
 alias chromep='open -a "Google Chrome" --args --proxy-pac-url=http://localhost:2000/proxy.pac'
-alias ls='exa'
+alias ls='eza'
 alias curl='curl -s'
 alias cat='bat --theme=ansi-dark --italic-text=always'
 alias grep='rg'
