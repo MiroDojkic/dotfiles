@@ -15,6 +15,14 @@ else
   export EDITOR='nvim'
 fi
 
+encrypt() {
+  openssl enc -aes-256-cbc -salt -in "$1" -out "$1.enc"
+}
+
+decrypt() {
+  openssl enc -d -aes-256-cbc -in "$1.enc" -out "$1"
+}
+
 alias zshconfig="nvim $HOME/.zshrc"
 alias ohmyzsh="nvim $HOME/.oh-my-zsh"
 alias alacritty="nvim $HOME/.config/alacritty/alacritty.yml"
