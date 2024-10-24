@@ -82,8 +82,8 @@ endfunction
 
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
-let g:copilot_no_tab_map = v:true
+" imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+" let g:copilot_no_tab_map = v:true
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
@@ -110,11 +110,13 @@ call plug#begin(expand('~/.vim/plugged'))
   Plug 'mattn/emmet-vim'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'sheerun/vim-polyglot'
-  Plug 'github/copilot.vim'
+  Plug 'supermaven-inc/supermaven-nvim'
+  " Plug 'github/copilot.vim'
   " Plug 'arcticicestudio/nord-vim'
   Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 call plug#end()
 
+lua require('supermaven-nvim').setup({})
 let g:nord_italic=1
 colorscheme embark
 hi Comment gui=italic
