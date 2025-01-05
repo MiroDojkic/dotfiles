@@ -36,7 +36,7 @@ alias npmrc='npm run dev:client'
 alias npmrs='npm run dev:server'
 alias ghciX='ghci -XNoImplicitPrelude'
 
-eval "$(fnm env)"
+eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"
 eval "$(broot --print-shell-function zsh)"
 
