@@ -35,6 +35,7 @@ alias mux='tmuxinator'
 alias npmrc='npm run dev:client'
 alias npmrs='npm run dev:server'
 alias ghciX='ghci -XNoImplicitPrelude'
+alias vim='nvim'
 
 eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"
