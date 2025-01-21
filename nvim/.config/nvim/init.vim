@@ -41,6 +41,7 @@ nnoremap [e :<C-u>execute 'move -1-'. v:count1<CR>
 nnoremap ]e :<C-u>execute 'move +'. v:count1<CR>
 nnoremap <leader>p :GFiles<CR>
 nnoremap <C-p> :Files<CR>
+nnoremap <leader>gs :Gdiffsplit!<CR>
 nnoremap <leader>gh :diffget //2<CR>
 nnoremap <leader>gl :diffget //3<CR>
 nnoremap <leader>gc :GBranches track<CR>
