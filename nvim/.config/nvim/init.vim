@@ -70,17 +70,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-" Trigger completion
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
@@ -90,8 +79,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <leader>rn <Plug>(coc-rename)
-nmap <leader>f  <Plug>(coc-fix-current)
-nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>f <Plug>(coc-fix-current)
+nmap <leader>ac <Plug>(coc-codeaction)
 
 packadd! matchit
 call plug#begin(expand('~/.vim/plugged'))
