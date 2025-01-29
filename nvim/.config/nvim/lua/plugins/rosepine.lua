@@ -1,9 +1,9 @@
 return {
-  { "embark-theme/vim" },
+  { "rose-pine/neovim" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "embark",
+      colorscheme = "rose-pine",
     },
   },
 }

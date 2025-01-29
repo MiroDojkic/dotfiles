@@ -1,5 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export FZF_DEFAULT_COMMAND="fd --type f"
+export HOMEBREW_PREFIX=$(brew --prefix)
 
 DISABLE_UPDATE_PROMPT="true"
 
@@ -35,6 +36,7 @@ alias npmrc='npm run dev:client'
 alias npmrs='npm run dev:server'
 alias ghciX='ghci -XNoImplicitPrelude'
 alias vim='nvim'
+alias vimnotes='nvim --listen 127.0.0.1:2006'
 
 eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"
