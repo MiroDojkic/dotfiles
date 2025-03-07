@@ -7,6 +7,7 @@ DISABLE_UPDATE_PROMPT="true"
 plugins=(git history zsh-autosuggestions common-aliases npm z colored-man-pages zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.env
 
 set -o vi
 set keymap vi
