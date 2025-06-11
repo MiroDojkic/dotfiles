@@ -1,0 +1,5 @@
+[time]
+disabled = false
+format = '[$time]($style) '
+time_format = "%T"  # ISO date and time
+style = "dimmed yellow"
