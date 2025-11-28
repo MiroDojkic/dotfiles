@@ -1,6 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export FZF_DEFAULT_COMMAND="fd --type f"
 export HOMEBREW_PREFIX=$(brew --prefix)
+export AWS_PAGER=""
 
 DISABLE_UPDATE_PROMPT="true"
 
