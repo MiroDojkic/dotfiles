@@ -33,7 +33,6 @@ alias ls='eza'
 alias curl='curl -s'
 alias cat='bat --theme=ansi-dark --italic-text=always'
 alias grep='rg'
-alias mux='tmuxinator'
 alias npmrc='npm run dev:client'
 alias npmrs='npm run dev:server'
 alias ghciX='ghci -XNoImplicitPrelude'
@@ -46,3 +45,4 @@ eval "$(broot --print-shell-function zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source $HOME/.config/broot/launcher/bash/br
+export PATH="$HOME/.ghcup/bin:$PATH"
