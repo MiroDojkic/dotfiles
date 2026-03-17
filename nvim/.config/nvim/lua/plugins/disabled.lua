@@ -1,5 +1,5 @@
 return {
   { "folke/persistence.nvim", enabled = false },
   { "folke/flash.nvim", enabled = false },
-  { "echasnovski/mini.animate", enabled = false },
+  { "nvim-mini/mini.animate", enabled = false },
 }
