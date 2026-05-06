@@ -6,3 +6,5 @@ vim.opt.guicursor = "n-v-c-sm:block-blinkon500-blinkoff500,"
   .. "i-ci-ve:ver25,"
   .. "r-cr-o:hor20,"
   .. "t:block-blinkon500-blinkoff500-TermCursor"
+
+vim.g.snacks_animate = false
