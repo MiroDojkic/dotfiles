@@ -38,6 +38,7 @@ alias npmrs='npm run dev:server'
 alias ghciX='ghci -XNoImplicitPrelude'
 alias vim='nvim'
 alias vimnotes='nvim --listen 127.0.0.1:2006'
+alias bootdev='/Users/md/go/bin/bootdev'
 
 eval "$(fnm env --use-on-cd)"
 eval "$(starship init zsh)"
@@ -47,5 +48,10 @@ eval "$(broot --print-shell-function zsh)"
 source $HOME/.config/broot/launcher/bash/br
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/md/.dart-cli-completion/zsh-config.zsh ]] && . /Users/md/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
 
 export PATH="$PATH":"$HOME/.pub-cache/bin"
