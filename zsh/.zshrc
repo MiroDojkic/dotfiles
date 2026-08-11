@@ -46,3 +46,6 @@ eval "$(broot --print-shell-function zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source $HOME/.config/broot/launcher/bash/br
 export PATH="$HOME/.ghcup/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+export PATH="$PATH":"$HOME/.pub-cache/bin"
